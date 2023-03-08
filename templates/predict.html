@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uber Fare Prediction</title>
+  </head>
+  <body>
+    <h1>Uber Fare Prediction</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+      <label for="distance">Distance (in kilometers):</label>
+      <input type="text" id="distance" name="distance"><br><br>
+      <input type="submit" value="Predict Fare">
+    </form>
+  </body>
+</html>
